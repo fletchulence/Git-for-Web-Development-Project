@@ -12,10 +12,13 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     5. Name two tags that have required attributes
     6. What do we put in the head of our HTML document? 
     7. What is an id?  
-        - an identifier
+        - gives ability to change 
     8. What elements can I add an id to? 
+        - any elements! but you might want to be as specific as possible
     9. How many times can I use the same id on a page? 
+        - ONLY ONCE
     10. What is a class? 
+        - a class is a way of specifing an area of code so that you can work back into the styling of the  
     11. What elements can I add a class to? 
     12. How many times can I use the same class on a page? 
     13. How do I get my link to open in a new tab?
