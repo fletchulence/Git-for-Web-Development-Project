@@ -1,0 +1,143 @@
+link to finished codepen: https://codepen.io/david-fletcher-the-looper/pen/GRmBwPr?editors=1100
+
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+        - semantic HTML is HTML that is helpful to the reader/developer as opposed to the computer. More descriptive for the human side of things lol
+    2. What is HTML used for? 
+        - used to build structure for websites
+    3. What is an attribute and where do we put it? 
+        - attribute comes after a tag and acts as instructions for what the tag should do specifically
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        - used for titles mostly. You CAN use it as many times as you want, but should really only use it for very important titles
+    5. Name two tags that have required attributes
+        - img must have src, and <a href=..> unless it is just meant as a placeholder
+    6. What do we put in the head of our HTML document? 
+        - wrap with <header></header>
+    7. What is an id?  
+        - gives ability to change 
+    8. What elements can I add an id to? 
+        - any elements! but you might want to be as specific as possible
+    9. How many times can I use the same id on a page? 
+        - ONLY ONCE
+    10. What is a class? 
+        - a class is a way of specifing an area of code so that you can work back into the styling of the  
+    11. What elements can I add a class to? 
+        - you could potentially add a class to any element in HTML. I dont know that you would need to, but you could!
+    12. How many times can I use the same class on a page? 
+        - as many as your heart desires.
+    13. How do I get my link to open in a new tab?
+        - target='_blank'
+    14. What is the alt attribute in the image tag used for? 
+        - if in case the format is not applicable for the user's machine
+    15. How do I reference an id?
+        - # 
+    16. What is the difference between a section and a div
+        - that's a really good q. mostly just stylistic but div's should be inside sections as is the normal?
+    17. What is CSS used for? 
+        - for styling your html
+    18. How to we select an element? Example - every h2 on the page
+        - in CSS we write 
+        h2 {
+            key: value;
+            key2: value;
+         }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        - class and id are used pretty similarly, with the only difference that id takes presidence and can only be used once per.
+            i presume if you wanted to explicitly highlight which already has a class assigned to it (broadly), you could use an id within
+            the limits.
+        - if you wanted to specifically highlight an element using css, you would use either a class or an id to note it in the HTML.
+            then you could reference it within CSS using . (class) or # (id)
+
+    20. How do we select classes in CSS?
+        - .className {
+            color: blue;
+        }
+    21. How do we select a p element with a single class of “human””?
+        - p .human {
+
+        }
+         or if there are no other references to human
+         .human {
+
+         } 
+    22. What is a parent child selector? When would this be useful? 
+        - parent > child selector are used in CSS to apply similar styles to both parents and children 
+
+    23. How do you select all links within a div with the class of sidebar?
+        - since links should have an anchor tag <a> you should be able to
+        a .sidebar {
+            key: value;
+        }
+    24. What is a pseudo selector?
+          - pseudo selector specifies a special state  of an element (i.e. :hover)
+    25. What do we use the change the spacing between lines?
+          - {line-height: ;}
+    26. What do we use to change the spacing between letters?
+         - {letter-spacing:  ;}
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+         - use the text-transform property in CSS
+    28. How do I add a 1px border around my div that is dotted and black?
+        - div {
+            border: 1px dashed black;
+        }
+
+    29. How do I select everything on the page? 
+        - use a universal selector 
+        *{
+            key: value;
+        }
+    30. How do I write a comment in CSS?
+        - in css /* write your comments in here */
+    31. How do I find out what file I am in, when I am using the command line? 
+        - cd will tell you what file/folder you are in
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        - [rm -r folder] will remove the folder and all of its contents. It may not prompt you before actually removing, so you may lost lots of work if you select the wrong one
+    34. Why should I use version control? 
+        - VS is used to make it easier to see the edits done by multiple people on one project. allows you to see edits 
+    35. How often should I commit to github?
+        - as often as possible! (20 min?)
+    36. What is the command we would use to push our repo up to github?
+        - git push -origin firstname-lastname
+    37. Walk me through Lambda's git flow. 
+        - here are the steps laid out:
+            1. open the project in browser
+            2. fork the project so that it belongs to you
+            3. now hit the button that says clone and something i cant rememebr
+                3a. dropdown menu shows up and copy HTTP address to clipboard
+            4. go to TERMINAL and make sure you are in the right folder
+                4a. cd folderName-whatever (so long as it's made) to make sure you are in folder
+            5. type git clone ____(paste copied file from HTTP in step 3a)___
+            6. cd into the folder from github
+            7. git checkout -b firstname-lastname
+            8. make new file with in term with " touch firstname-lastname.txt "
+            9. open VS code " code . " 
+                9a. make all the changes you want in VS Code
+            10. git add .
+            11. git commit -m 'i changed x y z'
+            12. git push -u origin branch-name (here our branch-name is our firstname-lastname)
+        now that you have pushed to github, go back into browser and submit a PULL REQUEST (PR)
+            13. make sure that your branch:master pulldown menu is set to your name and hit the button to the right that says "new pull request"
+                13a. DONT HIT CREATE PULL REQUEST JUST YET
+            14. select the next dropdown menu that selects the base repo and select your repo.
+            15. NOW that your base repo is selected you and you're comparing the correct files, you may hit the 'Create Pull Request' in green to make a pull request
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        - exactly as they sound,, inline elements will stay on the same line as the previous/post code, while block elements take up their own space on the webpage.
+    2. What happens when an element is positioned absolutely? 
+        - it is separated from the normal flow of the page.. it sits on it's own layer separate from everything else
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        - i think you are looking for margin: auto.
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        - blocks= h1-h6, <p>, <div>
+        - inline= <span>, <button>
+        - inline-block is a CSS workaround in order to get formatting how you want it
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        - honestly, dont fully understand the box model just yet. i understand that there are certain keys which when used represent the margin, padding, all that jazz
+            what i dont understand entirely are how they are all interconnected. How do you know the way one will move when the other does.
+            how do can you ensure that the one you want to stay where it's supposed to, stays?
+            i guess we will find out after these messages...
