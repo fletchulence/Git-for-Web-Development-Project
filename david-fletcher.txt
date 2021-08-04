@@ -129,9 +129,15 @@ Stretch Questions
     1. What is the difference between an inline element and a block element?
         - exactly as they sound,, inline elements will stay on the same line as the previous/post code, while block elements take up their own space on the webpage.
     2. What happens when an element is positioned absolutely? 
-        - 
+        - it is separated from the normal flow of the page.. it sits on it's own layer separate from everything else
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-        -
+        - i think you are looking for margin: auto.
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        - blocks= h1-h6, <p>, <div>
+        - inline= <span>, <button>
+        - inline-block is a CSS workaround in order to get formatting how you want it
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-
+        - honestly, dont fully understand the box model just yet. i understand that there are certain keys which when used represent the margin, padding, all that jazz
+            what i dont understand entirely are how they are all interconnected. How do you know the way one will move when the other does.
+            how do can you ensure that the one you want to stay where it's supposed to, stays?
+            i guess we will find out after these messages...
